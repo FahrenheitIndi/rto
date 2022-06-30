@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ mix('css/backend.css') }}">
+    @vite('resources/css/backend.css')
 
     <!-- Scripts -->
     @routes
-    <script src="{{ mix('js/backend.js') }}" defer></script>
+    @vite('resources/js/backend.js')
     @inertiaHead
 </head>
 <body class="font-sans antialiased">

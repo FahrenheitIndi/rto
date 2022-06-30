@@ -10,11 +10,11 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/frontend.css') }}">
+        @vite('resources/css/frontend.css')
 
         <!-- Scripts -->
         @routes
-        <script src="{{ mix('js/frontend.js') }}" defer></script>
+        @vite('resources/js/frontend.js')
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
